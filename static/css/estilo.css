@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap");
 
 html {
-  font-family: "Oxygen";
-  background-color: #d6d0df;
-}
+    font-family: "Oxygen";
+    background: linear-gradient(45deg, #a3abb9, #6ec298, #a2ec1a);
+    background-size: 300% 300%;
+    animation: fondoAnimado 10s infinite alternate;
+  }
+  
+  @keyframes fondoAnimado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
 a {
   color: rgb(207, 182, 185);
   text-decoration: none;
@@ -15,7 +24,7 @@ a:hover {
   background-color: #df11cd;
   padding: 100px;
   border-radius: 1000px;
-  box-shadow: 100px 400px 800px;
+  box-shadow: 1000px 4000px 8000px;
 }
 .producto-info {
   padding: 50px;
@@ -40,7 +49,7 @@ a:hover {
   
   .Inicio:hover {
     background-color: #e60000;
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
   
 @keyframes pulse {
