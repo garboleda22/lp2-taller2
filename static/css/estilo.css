@@ -26,14 +26,23 @@ a:hover {
   margin-right: auto;
 }
 .Inicio {
-  width: 60px;
-  height: 25px;
-  background-color: rgb(199, 73, 15);
-  border-radius: 4px;
-}
-.Inicio:hover {
-  animation: pulse 0.5s infinite;
-}
+    width: 100px;
+    height: 40px;
+    background-color: #ff4d4d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Inicio:hover {
+    background-color: #e60000;
+    transform: scale(1.1);
+  }
+  
 @keyframes pulse {
   0% {
     transform: scale(1);
